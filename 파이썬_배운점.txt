@@ -1,0 +1,20 @@
+1-1. 
+    file을 읽어올 때, f = open()을 사용해도 되지만
+    with open() as f:를 사용하면 close()없이도 구문 안에서 처리가능
+    대신, file을 두 개 이상 읽어올 때 너무 들여쓰게 됨
+    리스트를 sorting할 때는 list.sort()함수를 사용하는데, 옵션은
+    reverse와 key가 크게 있음. key값을 통해서 정렬 기준 세울 수 있음. 기본은 오름차순
+    key는 그냥 정렬의 기준을 세워두는 것임.
+
+    람다함수는 lambda x : ~~ 처럼 사용할 수 있음.
+    정렬에서 key = lambda x : x[0]라는 것은, x[0]의 값으로 정렬 기준을 삼겠다는 말임.
+
+    print('dfdf', end='')
+
+
+5-1.
+    np.genfromtxt와 dtype설정을 통해서 csv파일을 ndarray로 읽어올 수 있다.
+    [['\ufeffparts' 'strength']같이 나오는 것은 잘못된 것이 아니라, utf-8로 인코딩된 파일에서 인코딩 형식을 나타내는 표식
+    skip_header를 쓰면 튜플로 반환이 되고, 안 쓰면 그냥 리스트로 반환이 되는구나
+    np.sort(배열명)
+    list.append랑 np.append랑 뭐가 다름? (numpy배열에 추가하느냐, list에 추가하느냐 차이)
